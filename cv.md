@@ -2,4 +2,4 @@
 
 ## Contacts
 
-### *New Feature* ###
+### ~~New Feature~~ ###
