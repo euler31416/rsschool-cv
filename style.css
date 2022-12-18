@@ -1,1 +1,15 @@
-style
+p{
+    font-size: 30px;
+}
+
+.header{
+    background-color: aquamarine;
+}
+
+.main{
+    background-color:antiquewhite;
+}
+
+.footer{
+    background-color:aquamarine; 
+}
