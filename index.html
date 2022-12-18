@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+          <nav>
+            <h1><strong>Dzmitry Pauliuchenka</strong></h1>
+          </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <img src="https://news.tts.lt/static/media/cache/46/85/4685b648d52ab3b20549559a4414f06f.jpg" alt="avatar" width="300" height="200">
+        <h2><strong>Personal information</strong></h2>
+
+        <ul>
+            <li><strong>FirstName</strong> : <em>Dzmitry</em></li>
+            <li><strong>LastName</strong>: <em>Pauliuchenka</em></li>
+            <li><strong>Age</strong> : <em>32</em></li>
+            <li><strong>Education</strong> :<em>Belarusian national technical university</em></li>
+            <li><strong>Profession</strong> : <em>Power engineer</em></li>
+            <li><strong>Place of work</strong> : <em>Power engineering</em></li>
+            <li><strong>Languages</strong> : <em>English, Russian</em></li>
+        </ul>
+
+        <h2><strong>Contact Details</strong></h2>
+
+        <ul>
+            <li><strong>Address</strong> : <em>address</em></li>
+            <li><strong>Phone</strong> : <em>phone number</em></li>
+            <li><strong>E-mail</strong> : <em>e-mail</em></li>
+            <li><strong>github</strong> : <em>euler31416</em></li>
+        </ul>
+
+        <h2><strong>Skills</strong></h2>
+
+        <ul>
+            <li><em>HTML5, CSS</em></li>
+            <li><em>C</em></li>
+        </ul>
+
+        <h2><strong>Education courses in Progress</strong></h2>
+
+        <ul>
+            <li><strong>RS Schools Course</strong></li>
+            <li><em>JavaScript/Front-end. Stage 0</em></li>
+        </ul>
+
+        <hr>
+        <hr>
+
+        <h3><strong>CODE EXAMPLE</strong></h3>
+        <h4><strong>Number of lower and upper chars</strong></h4>
+        <pre>
+            <code>
+                #include stdio.h
+                    #include ctype.h
+                    
+                    #define INPUT 100			
+                    
+                    int main(void)
+                    {
+                        int input[INPUT];
+                        int i = 0;
+                        int low = 0;
+                        int up = 0;
+                        int other = 0;
+                        
+                        while((input[i++] = getchar()) != '\n');
+                        
+                        for(i = 0; input[i] != '\n'; i++)
+                        {
+                            if (islower(input[i])){
+                                low++;
+                            } else if(isupper(input[i])){
+                                up++;
+                            } else other++;
+                            
+                        }
+                        printf("We have %d upper chars, %d lower chars and %d other chars.\n", up, low, other);
+                        
+                        return 0;
+                    }
+         
+            </code>
+        </pre>
+    </main>
+
+    <footer class="footer">
+       
+        <div>
+            <a href="https://github.com/euler31416">Github &#169; 2022</a>
+        </div>
+
+        <div>
+            <h4><strong><a href="https://rs.school/js/">RS School</a></strong></h4>
+        </div>
+
+        <div>
+            <img src="https://rs.school/images/rs_school_js.svg" alt="RS logo" width="40" height="40">
+        </div>
+    </footer>
+</body>
+</html>
